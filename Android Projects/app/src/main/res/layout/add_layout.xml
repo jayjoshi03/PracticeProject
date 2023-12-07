@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:padding="1dp"
+        android:layout_weight="0.7"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/new_layout"
+        android:layout_height="45dp"
+        android:autofillHints=""
+        android:inputType="text"
+        tools:ignore="LabelFor,RtlSymmetry" />
+
+    <Button
+        android:text="@string/close"
+        android:id="@+id/closeBtn"
+        android:layout_weight="0.3"
+        android:layout_marginStart="5dp"
+        android:layout_width="0dp"
+        android:layout_height="45dp"/>
+
+</LinearLayout>

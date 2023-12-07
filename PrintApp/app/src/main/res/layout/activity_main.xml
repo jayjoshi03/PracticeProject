@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <HorizontalScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:scrollbarStyle="insideOverlay"
+                    android:scrollbars="vertical">
+
+
+                    <EditText
+                        android:id="@+id/et_ImgW"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="12dp"
+                        android:text="100"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView_PDF_Page3"
+                        app:layout_constraintStart_toEndOf="@+id/textView_PDF_Page3"
+                        app:layout_constraintTop_toTopOf="@+id/textView_PDF_Page3" />
+
+
+                    <EditText
+                        android:id="@+id/et_ImgH"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="12dp"
+                        android:text="100"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView_PDF_Page3"
+                        app:layout_constraintStart_toEndOf="@+id/textView_PDF_Page4"
+                        app:layout_constraintTop_toTopOf="@+id/textView_PDF_Page3"
+                        app:layout_constraintVertical_bias="0.437" />
+
+                    <TextView
+                        android:id="@+id/textView_PDF_Page3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="W:"
+                        app:layout_constraintBottom_toBottomOf="@+id/button_Img"
+                        app:layout_constraintStart_toEndOf="@+id/button_Img"
+                        app:layout_constraintTop_toTopOf="@+id/button_Img" />
+
+                    <TextView
+                        android:id="@+id/textView_PDF_Page4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="H:"
+                        app:layout_constraintBottom_toBottomOf="@+id/button_Img"
+                        app:layout_constraintStart_toEndOf="@+id/et_ImgW"
+                        app:layout_constraintTop_toTopOf="@+id/button_Img"
+                        app:layout_constraintVertical_bias="0.513" />
+
+                    <Button
+                        android:id="@+id/button_LoadImg"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="36dp"
+                        android:text="Load Img"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView_RFID_Received" />
+
+                    <Button
+                        android:id="@+id/button_Img"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="60dp"
+                        android:text="Print Img"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_LoadImg" />
+
+                    <EditText
+                        android:id="@+id/et_RFID"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:text="123456789012"
+                        android:textAlignment="center"
+                        app:layout_constraintStart_toStartOf="@+id/textView_RFID"
+                        app:layout_constraintTop_toBottomOf="@+id/textView_RFID" />
+
+                    <TextView
+                        android:id="@+id/textView_RFID_Received"
+                        android:layout_width="160dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@color/colorField"
+                        android:text=" "
+                        app:layout_constraintStart_toStartOf="@+id/textView_RFID2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView_RFID2" />
+
+                    <TextView
+                        android:id="@+id/textView_RFID2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Received:"
+                        app:layout_constraintStart_toEndOf="@+id/button_RFID"
+                        app:layout_constraintTop_toBottomOf="@+id/et_RFID" />
+
+                    <Button
+                        android:id="@+id/button_RFID"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="36dp"
+                        android:text="TEST RFID"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_PDF" />
+
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:text="@string/title_NET"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/textView_IP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginTop="28dp"
+                        android:text="IP Address:"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+
+                    <TextView
+                        android:id="@+id/textView_PDF_Page"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Page:"
+                        app:layout_constraintBottom_toBottomOf="@+id/button_PDF"
+                        app:layout_constraintStart_toEndOf="@+id/button_PDF"
+                        app:layout_constraintTop_toTopOf="@+id/button_PDF" />
+
+                    <TextView
+                        android:id="@+id/textView_PDF_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Name:"
+                        app:layout_constraintBottom_toBottomOf="@+id/button_Load"
+                        app:layout_constraintStart_toEndOf="@+id/button_Load"
+                        app:layout_constraintTop_toTopOf="@+id/button_Load"
+                        app:layout_constraintVertical_bias="0.576" />
+
+                    <TextView
+                        android:id="@+id/textView_Img_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Name:"
+                        app:layout_constraintBottom_toBottomOf="@+id/button_LoadImg"
+                        app:layout_constraintStart_toEndOf="@+id/button_LoadImg"
+                        app:layout_constraintTop_toTopOf="@+id/button_LoadImg" />
+
+                    <TextView
+                        android:id="@+id/textView_PDF_Name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        app:layout_constraintBottom_toBottomOf="@+id/button_Load"
+                        app:layout_constraintStart_toStartOf="@+id/et_Page"
+                        app:layout_constraintTop_toTopOf="@+id/button_Load"
+                        app:layout_constraintVertical_bias="0.615" />
+
+                    <TextView
+                        android:id="@+id/textView_Img_Name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text=" "
+                        app:layout_constraintBottom_toBottomOf="@+id/textView_Img_Name"
+                        app:layout_constraintStart_toEndOf="@+id/textView_Img_Name"
+                        app:layout_constraintTop_toTopOf="@+id/textView_Img_Name" />
+
+                    <TextView
+                        android:id="@+id/textView_PDF_Page2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="12dp"
+                        android:text="(1~1, 0: Print All)"
+                        app:layout_constraintStart_toEndOf="@+id/button_PDF"
+                        app:layout_constraintTop_toBottomOf="@+id/textView_PDF_Page" />
+
+                    <TextView
+                        android:id="@+id/textView_RFID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Write:"
+                        app:layout_constraintStart_toEndOf="@+id/button_RFID"
+                        app:layout_constraintTop_toTopOf="@+id/button_RFID" />
+
+                    <EditText
+                        android:id="@+id/et_IP"
+                        android:layout_width="180dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="24dp"
+                        android:text="10.100.15.211"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView_IP"
+                        app:layout_constraintStart_toEndOf="@+id/textView_IP"
+                        app:layout_constraintTop_toTopOf="@+id/textView_IP"
+                        app:layout_constraintVertical_bias="0.428" />
+
+                    <EditText
+                        android:id="@+id/et_Page"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="12dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="@+id/button_PDF"
+                        app:layout_constraintStart_toEndOf="@+id/textView_PDF_Page"
+                        app:layout_constraintTop_toTopOf="@+id/button_PDF"
+                        app:layout_constraintVertical_bias="0.4" />
+
+                    <androidx.constraintlayout.widget.Barrier
+                        android:id="@+id/barrier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:barrierDirection="top" />
+
+                    <Button
+                        android:id="@+id/button_Label"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="36dp"
+                        android:text="Print Label"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView_IP" />
+
+                    <Button
+                        android:id="@+id/button_PDF"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="60dp"
+                        android:text="Print PDF"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_Load" />
+
+                    <Button
+                        android:id="@+id/button_Load"
+                        android:layout_width="120dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="36dp"
+                        android:text="Load PDF"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/button_Label" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:menu="@menu/navigation" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

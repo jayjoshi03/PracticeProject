@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ComposeUI</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="app_logo">App Logo</string>
+    <string name="storypedia">The StoryPedia</string>
+    <string name="find_story">New Experience</string>
+    <string name="login">Login</string>
+</resources>
