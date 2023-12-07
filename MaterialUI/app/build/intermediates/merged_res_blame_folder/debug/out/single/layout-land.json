@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-mergeDebugResources-27:\\layout-land\\activity_date.xml",
+        "source": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-main-30:\\layout-land\\activity_date.xml"
+    },
+    {
+        "merged": "com.example.materialui.app-mergeDebugResources-27:/layout-land/activity_test.xml",
+        "source": "com.example.materialui.app-main-30:/layout-land/activity_test.xml"
+    }
+]

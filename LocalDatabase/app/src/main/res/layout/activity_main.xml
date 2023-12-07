@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mainViewModel"
+            type="com.example.localdatabase.viewmodel.MyViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.MainActivity">
+
+        <!--        <EditText-->
+        <!--            android:hint="edite"-->
+        <!--            android:layout_marginHorizontal="20dp"-->
+        <!--            android:layout_above="@+id/text"-->
+        <!--            android:layout_marginBottom="20dp"-->
+        <!--            android:text="@={mainViewModel.nameObject}"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="48dp"/>-->
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@{mainViewModel.name}"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp" />
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/et_text"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:layout_marginHorizontal="20dp"-->
+        <!--            android:hint="edit"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="48dp"/>-->
+
+        <Button
+            android:id="@+id/btn_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:onClick="@{() -> mainViewModel.update()}"
+            android:text="Update" />
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_response"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/et_text"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:text="Response" />-->
+
+    </RelativeLayout>
+</layout>

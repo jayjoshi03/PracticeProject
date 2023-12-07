@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-mergeDebugResources-27:\\layout\\activity_time_picker.xml",
+        "source": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-main-30:\\layout\\activity_time_picker.xml"
+    },
+    {
+        "merged": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-mergeDebugResources-27:\\layout\\carousel_item.xml",
+        "source": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-main-30:\\layout\\carousel_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-mergeDebugResources-27:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-main-30:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-mergeDebugResources-27:\\layout\\activity_test.xml",
+        "source": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-main-30:\\layout\\activity_test.xml"
+    },
+    {
+        "merged": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-mergeDebugResources-27:\\layout\\activity_main2.xml",
+        "source": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-main-30:\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-mergeDebugResources-27:\\layout\\activity_app_top_bar.xml",
+        "source": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-main-30:\\layout\\activity_app_top_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-mergeDebugResources-27:\\layout\\adapter_card.xml",
+        "source": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-main-30:\\layout\\adapter_card.xml"
+    },
+    {
+        "merged": "com.example.materialui.app-mergeDebugResources-27:/layout/activity_main.xml",
+        "source": "com.example.materialui.app-main-30:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-mergeDebugResources-27:\\layout\\activity_date.xml",
+        "source": "C:\\Users\\VIPL 11\\.gradle\\daemon\\8.0\\com.example.materialui.app-main-30:\\layout\\activity_date.xml"
+    }
+]

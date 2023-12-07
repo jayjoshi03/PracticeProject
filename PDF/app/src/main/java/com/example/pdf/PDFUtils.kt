@@ -1,0 +1,44 @@
+package com.example.pdf
+
+import com.itextpdf.text.BaseColor
+import com.itextpdf.text.Chunk
+import com.itextpdf.text.Document
+import com.itextpdf.text.DocumentException
+import com.itextpdf.text.Font
+import com.itextpdf.text.Paragraph
+import com.itextpdf.text.pdf.draw.LineSeparator
+import com.itextpdf.text.pdf.draw.VerticalPositionMark
+
+object PDFUtils {
+    @Throws(DocumentException::class)
+    fun addNewItem(document : Document, text : String, align : Int, font : Font) {
+        val chunk = Chunk(text, font)
+        val p = Paragraph(chunk)
+        p.alignment = align
+        document.add(p)
+    }
+
+    @Throws(DocumentException::class)
+    fun addLineSeparator(document : Document){
+        val lineSeparator = LineSeparator()
+        lineSeparator.lineColor = BaseColor(0,0,0,68)
+        addLineSpace(document)
+        document.add(Chunk(lineSeparator))
+        addLineSpace(document)
+    }
+
+    @Throws(DocumentException::class)
+    fun addLineSpace(document : Document) {
+        document.add(Paragraph(""))
+    }
+
+    @Throws(DocumentException::class)
+    fun addNewItemWithLeftAndRight(document : Document, leftText : String, rightText:String, leftFont : Font, rightFont : Font) {
+       val chunkTextLeft = Chunk(leftText,leftFont)
+        val chunkTextRight = Chunk(rightText,rightFont)
+        val p = Paragraph(chunkTextLeft)
+        p.add(Chunk(VerticalPositionMark()))
+        p.add(chunkTextRight)
+        document.add(p)
+    }
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LocalDatabase</string>
+    <string name="title_activity_switch">SwitchActivity</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">MaterialUI</string>
+    <style name="Base.Theme.Material" parent="Theme.Material3.Dark.NoActionBar">
+        
+        
+    </style>
+    <style name="Base.Theme.MaterialUI" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        
+        <item name="android:statusBarColor">#006064</item>
+        <item name="android:navigationBarColor">#006064</item>
+    </style>
+    <style name="Theme.MaterialUI" parent="Base.Theme.MaterialUI"/>
+</resources>

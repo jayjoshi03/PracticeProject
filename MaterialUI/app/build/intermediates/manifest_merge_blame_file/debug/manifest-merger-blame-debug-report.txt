@@ -1,0 +1,125 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.materialui"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml
+10
+11    <permission
+11-->[androidx.core:core:1.10.1] C:\Users\VIPL 11\.gradle\caches\transforms-3\266141f2cc4f307fd6189a5a9e57b893\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.materialui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.10.1] C:\Users\VIPL 11\.gradle\caches\transforms-3\266141f2cc4f307fd6189a5a9e57b893\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.10.1] C:\Users\VIPL 11\.gradle\caches\transforms-3\266141f2cc4f307fd6189a5a9e57b893\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.materialui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.10.1] C:\Users\VIPL 11\.gradle\caches\transforms-3\266141f2cc4f307fd6189a5a9e57b893\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.10.1] C:\Users\VIPL 11\.gradle\caches\transforms-3\266141f2cc4f307fd6189a5a9e57b893\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:5:5-44:19
+18        android:allowBackup="true"
+18-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:6:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.10.1] C:\Users\VIPL 11\.gradle\caches\transforms-3\266141f2cc4f307fd6189a5a9e57b893\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+20        android:dataExtractionRules="@xml/data_extraction_rules"
+20-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:7:9-65
+21        android:debuggable="true"
+22        android:extractNativeLibs="false"
+23        android:fullBackupContent="@xml/backup_rules"
+23-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:8:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:9:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:10:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:11:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:12:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.MaterialUI" >
+29-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:13:9-48
+30        <activity
+30-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:15:9-17:40
+31            android:name="com.example.materialui.MainActivity2"
+31-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:16:13-42
+32            android:exported="false" />
+32-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:17:13-37
+33        <activity
+33-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:18:9-27:20
+34            android:name="com.example.materialui.MainActivity"
+34-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:19:13-41
+35            android:exported="true"
+35-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:20:13-36
+36            android:screenOrientation="sensor" >
+36-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:21:13-47
+37            <intent-filter>
+37-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:22:13-26:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:23:17-69
+38-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:23:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:25:17-77
+40-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:25:27-74
+41            </intent-filter>
+42        </activity>
+43        <activity
+43-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:28:9-33:20
+44            android:name="com.example.materialui.TestActivity"
+44-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:29:13-41
+45            android:exported="false"
+45-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:30:13-37
+46            android:screenOrientation="sensor" >
+46-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:31:13-47
+47        </activity>
+48        <activity
+48-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:34:9-37:59
+49            android:name="com.example.materialui.TimePickerActivity"
+49-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:35:13-47
+50            android:exported="true"
+50-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:36:13-36
+51            android:screenOrientation="sensor" />
+51-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:37:13-47
+52        <activity
+52-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:38:9-40:48
+53            android:name="com.example.materialui.DatePickerActivity"
+53-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:39:13-47
+54            android:exported="true" />
+54-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:40:13-36
+55        <activity
+55-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:41:9-43:40
+56            android:name="com.example.materialui.CarouselActivity"
+56-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:42:13-45
+57            android:exported="false" />
+57-->C:\Users\VIPL 11\AndroidStudioProjects\MaterialUI\app\src\main\AndroidManifest.xml:43:13-37
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\VIPL 11\.gradle\caches\transforms-3\4489033787a152d1ed2ed20b0293b2cb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\VIPL 11\.gradle\caches\transforms-3\4489033787a152d1ed2ed20b0293b2cb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+61            android:authorities="com.example.materialui.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\VIPL 11\.gradle\caches\transforms-3\4489033787a152d1ed2ed20b0293b2cb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\VIPL 11\.gradle\caches\transforms-3\4489033787a152d1ed2ed20b0293b2cb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\VIPL 11\.gradle\caches\transforms-3\4489033787a152d1ed2ed20b0293b2cb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\VIPL 11\.gradle\caches\transforms-3\4489033787a152d1ed2ed20b0293b2cb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\VIPL 11\.gradle\caches\transforms-3\4489033787a152d1ed2ed20b0293b2cb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\VIPL 11\.gradle\caches\transforms-3\0521f07717581cdc27f649543e97f3ce\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\VIPL 11\.gradle\caches\transforms-3\0521f07717581cdc27f649543e97f3ce\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\VIPL 11\.gradle\caches\transforms-3\0521f07717581cdc27f649543e97f3ce\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+69        </provider>
+70    </application>
+71
+72</manifest>
